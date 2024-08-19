@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Illustration.css">
+    <title>Illustration</title>
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+</head>
+
+<body>
+    
+    <div hx-get="/head.html" hx-trigger="load"></div>
+
+    <h1>Illustration</h1>
+
+
+    <section>
+        
+        <div class="products-row js-products-row">
+
+
+        </div>
+
+    </section>
+
+    <script src="data/Illustration-products.js"></script>
+    <script src="scripts/Illustration.js"></script>
+
+    <div hx-get="/foot.html" hx-trigger="load"></div>
+    
+</body>
+
+
+<script src="index.js"></script>
+
+</html>

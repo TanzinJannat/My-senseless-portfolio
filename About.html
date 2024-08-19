@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="About.css">
+    <title>About</title>
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+</head>
+
+<body>
+
+    <div hx-get="/head.html" hx-trigger="load"></div>
+
+
+    <h1>About</h1>
+
+    <section class="profile-picture">
+        <img src="Images/profile.jpg" alt="">
+        <p>December 18, 2019 - Cox's Bazar, Bangladesh</p>
+    </section>
+    <section class="information">
+
+        <p class="Intro">Hi! My name is Tanzin & I'm a second-year university student majoring in Mathematics. This
+            website is my
+            creative portfolio filled with all the beautiful things, people, places & memories I love. Hope you love it
+            too!</p>
+        
+        <ul id="accordian">
+            <li>
+                <label for="first">More information <span>&#x3e</span></label>
+                <input type="radio" name="accordian" id="first" checked>
+                <div class="content">
+                    <p><span>Religion: </span><b><u>Islam</u></b></p>
+                    <p><span>Hobby: </span><b><u>Painting</u></b></p>
+                    <p><span>Home Town: </span><b><u>Feni</u></b></p>
+                </div>
+            </li>
+            <li>
+                <label for="second">Favourite<span>&#x3e</span></label>
+                <input type="radio" name="accordian" id="second">
+                <div class="content">
+                    <p><span>Food: </span><b><u>Biriyani</u></b></p>
+                    <p><span>Color: </span><b><u>Light Pink and Neon</u></b></p>
+                    <p><span>App: </span><b><u>Adobe Illustrator</u></b></p>
+                </div>
+            </li>
+
+
+    </section>
+
+    <div hx-get="/foot.html" hx-trigger="load"></div>
+
+   <script src="index.js"></script>
+
+  
+</body>
+
+</html>

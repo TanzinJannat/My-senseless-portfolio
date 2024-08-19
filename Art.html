@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Art.css">
+    <title>Art</title>
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+</head>
+
+<body>
+
+    <div hx-get="/head.html" hx-trigger="load"></div>
+
+    <h1>Art</h1>
+
+    <section>
+        <div class="js-products-row">
+        
+        </div>
+    </section>
+
+    <div hx-get="/foot.html" hx-trigger="load"></div>
+</body>
+
+<script src="index.js"></script>
+<script src="data/art.js"></script>
+<script src="scripts/art.js"></script>
+
+</html>

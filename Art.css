@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "EB Garamond", serif;
+    background-color: #e7e1cb;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #e7e1cb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    gap: 23px;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "EB Garamond", serif;
+}
+
+nav a:hover{
+    color: #171717;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+nav img{
+    width: 100%;
+    width: 150px;
+    margin-right: 412px;
+    cursor: pointer;
+}
+
+.list{
+    padding-left: 240px;
+    padding-top: 10px;
+}
+
+.sidebar{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+    padding: 70px 0 70px 0;
+}
+
+.image-1{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.image-1 img{
+    width: 500px;
+}
+
+.image-padding{
+    padding-top: 35px;
+}
+
+
+@media (max-width: 600px) {
+    nav{
+        padding: 0px;
+    }
+
+    .menu{
+        display: block;
+        list-style: none;
+        padding-right: 25px;
+    }
+    
+    nav img{
+        width: 130px;
+        margin-right: 0px;
+        
+    }
+  
+    .list{
+        display: none;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }
+
+    .sidebar li{
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 12px;
+    }
+    .sidebar a{
+        width: 100%;
+    }
+
+    section{
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .image-1 img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #e7e1cb;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+}
+
+footer .join a{
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+footer p{
+    font-size: 18.5px;
+    padding-top: 40px;
+    color: gray;
+}
